@@ -1,0 +1,148 @@
+/* The navigation bar */
+.navbar {
+  overflow: hidden;
+  background-color: rgb(160, 160, 160);
+  position: absolute; /* Set the navbar to fixed position */
+  top: 0; /* Position the navbar at the top of the page */
+  width: 100%; /* Full width */
+}
+
+/* Links inside the navbar */
+.navbar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change background on mouse-over */
+.navbar a:hover {
+  background: #ddd;
+  color: rgb(255, 255, 255);
+}
+
+/* Main content */
+.main {
+  margin-top: 30px; /* Add a top margin to avoid content overlay */
+}
+/* The navigation bar */
+.navbar {
+  position:absolute; /* Set the navbar to fixed position */
+  bottom: 0; /* Position the navbar at the bottom of the page */
+  width: 100%; /* Full width */
+}
+
+/* Main content */
+.main {
+  margin-bottom: 30px; /* Add a bottom margin to avoid content overlay */
+}
+h1{
+  font-size: 70px;
+  text-align: center;
+  font-style:italic ;
+  font-family:'Times New Roman', Times, serif ;
+}
+#h1st{
+  color: coral;
+}
+#h2nd{
+  color: blue;
+}
+p{
+  font-size: 30px;
+
+}
+body, html {
+  background-color: rgb(160, 160, 160);
+height: 100%;
+}
+
+* {
+box-sizing: border-box;
+}
+
+.bg-image {
+/* The image used */
+background-image: url("../restaurants/restaurant\ ph.jpg");
+
+/* Add the blur effect */
+filter: blur(8px);
+-webkit-filter: blur(8px);
+
+/* Full height */
+height: 100%;
+
+/* Center and scale the image nicely */
+background-position:center;
+background-repeat: no-repeat;
+background-size:contain;
+margin-top: 60px;
+}
+
+/* Position text in the middle of the page/image */
+.bg-text {
+  margin-top: 20px;
+
+background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
+color: white;
+font-weight: bold;
+border: 3px solid #ffffff;
+position:absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+z-index: 2;
+width: 80%;
+padding: 20px;
+text-align: center;
+}
+* {
+  box-sizing: border-box;
+}
+
+#myInput {
+  background-image: url('/css/searchicon.png');
+  background-position: 10px 10px;
+  background-repeat: no-repeat;
+  width: 100%;
+  font-size: 16px;
+  padding: 12px 20px 12px 40px;
+  border: 1px solid #ddd;
+  margin-bottom: 12px;
+}
+
+#myTable {
+  border-collapse: collapse;
+  width: 100%;
+  border: 1px solid #ddd;
+  font-size: 18px;
+}
+
+#myTable th, #myTable td {
+  text-align: left;
+  padding: 12px;
+}
+
+#myTable tr {
+  border-bottom: 1px solid #ddd;
+}
+
+#myTable tr.header, #myTable tr:hover {
+  background-color: #f1f1f1;
+}
+.button {
+  border-radius: 4px;
+  background-color: #f4511e;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 28px;
+  padding: 20px;
+  width: 200px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+

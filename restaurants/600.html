@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css" >
+    </head>
+    <body>
+      <div class="navbar">
+        <a href="/Users/qwerty/Desktop/website/restaurants/f1.html">Food</a>
+        <a href="/Users/qwerty/Desktop/website/restaurants/D1.html">Drinks</a>
+        <a href="mailto:tarekchk2003@gmail.com">Contact Us</a>
+      </div>
+      
+      <div class="bg-image"></div>
+
+      <div class="bg-text">
+            <h1 id="frst">Welcome To ...</h1>    
+         
+    </div>
+    <h1 id="h2nd">Our Daily New Plates</h1>
+    
+
+<input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for names.." title="Type in a name">
+
+<table id="myTable">
+  <tr class="header">
+    <th style="width:60%;">Name</th>
+    <th style="width:40%;">price</th>
+  </tr>
+  <tr onclick="window.location.href = 'file:///C:/Users/qwerty/Desktop/website/restaurants/food1.html';">
+  <td>Food</td>
+    <td>40$</td>
+  </tr>
+  <tr onclick="window.location.href = 'file:///C:/Users/qwerty/Desktop/website/restaurants/drinks1.html';">
+    <td> Drink</td>
+    <td>50$</td>
+  </tr>
+  <tr onclick="window.location.href = '';">
+    <td></td>
+    <td></td>
+  </tr>
+  <tr onclick="window.location.href = '';">
+    <td> </td>
+    <td></td>
+  </tr>
+  <tr onclick="window.location.href = '';">
+    <td></td>
+    <td></td>
+  </tr>
+  <tr onclick="window.location.href = '';">
+    <td>  </td>
+    <td></td>
+  </tr>
+  <tr onclick="window.location.href = '';">
+    <td></td>
+    <td></td>
+  </tr>
+  <tr onclick="window.location.href = '';">
+    <td> </td>
+    <td></td>
+  </tr>
+</table>
+
+<script>
+function myFunction() {
+  var input, filter, table, tr, td, i, txtValue;
+  input = document.getElementById("myInput");
+  filter = input.value.toUpperCase();
+  table = document.getElementById("myTable");
+  tr = table.getElementsByTagName("tr");
+  for (i = 0; i < tr.length; i++) {
+    td = tr[i].getElementsByTagName("td")[0];
+    if (td) {
+      txtValue = td.textContent || td.innerText;
+      if (txtValue.toUpperCase().indexOf(filter) > -1) {
+        tr[i].style.display = "";
+      } else {
+        tr[i].style.display = "none";
+      }
+    }       
+  }
+}
+</script>
+    </body>
+</html>

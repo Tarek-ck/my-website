@@ -1,0 +1,210 @@
+#frst {
+  font-size: 80px;
+  font-style: italic;
+  text-align: center;
+}
+body{
+  background-color: grey
+}
+.button {
+  background-color: #ddd;
+  border: none;
+  color: black;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 16px;
+}
+#bn1{
+  float: right;
+  margin: 15px 40px 0px 0px;
+}
+/* Style the navigation bar */
+.navbar {
+  width: 100%;
+  overflow: auto;
+}
+
+/* Navbar links */
+.navbar a {
+  float: left;
+  text-align: center;
+  padding: 12px;
+  color: white;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Navbar links on mouse-over */
+.navbar a:hover {
+  background-color: #000;
+}
+
+/* Current/active navbar link */
+.active {
+  background-color: #04AA6D;
+}
+
+/* Add responsiveness - will automatically display the navbar vertically instead of horizontally on screens less than 500 pixels */
+@media screen and (max-width: 500px) {
+  .navbar a {
+    float: none;
+    display: block;
+  }
+}
+body {
+  font-family: "Lato", sans-serif;
+}
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+@media only screen and (min-width: 760px) {
+  .sidenav{
+   display: none;
+   float: none;
+   position: none;
+   visibility: hidden;
+  }
+}
+@media only screen and (min-width: 759px) {
+  span{
+    display: none;
+   float: none;
+   position: none;
+   visibility: hidden;
+  }
+}
+@media only screen and (max-width:759px) {
+  .navbar {
+    display: none;
+    float: none;
+    position:none;
+   visibility: hidden;
+  }
+}
+
+
+
+
+.flip-box {
+  background-color: transparent;
+  width: 300px;
+  height: 200px;
+  border: 1px solid #f1f1f1;
+  perspective: 300px;
+}
+
+.flip-box-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.flip-box:hover .flip-box-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-box-front, .flip-box-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-box-front{
+  background-color: #bbb;
+  color: black;
+}
+
+.flip-box-back {
+  background-color: dodgerblue;
+  color: white;
+  transform: rotateY(180deg);
+}
+
+
+
+
+.container{
+  width: 100%;
+  min-height: 100vh;
+  padding: 5%;
+  background-image: linear-gradient(rgba(0,8,51,0,9),rgba(0,8,51,0,9)),;
+background-position:center ;  
+background-size:cover ;
+display: flex;
+align-items: center;
+}
+.search-bar{
+  width: 100%;
+  max-width: 70px;
+background: rgba(255,255,255,0.2);
+display: flex;
+align-items: center;
+border-radius: 60px;
+padding: 10px 20px;
+}
+.search-bar input{
+  background: white;
+  flex: 1;
+  border: 0;
+  outline: none;
+  padding: 24px 20px;
+  font-size: 20px;
+  color: #cac7ff;
+}
+::placeholder{
+  color: #cac7ff;
+}
+.search-bar button img{
+  border: 0;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  background: #58629b;
+  cursor: pointer;
+}
