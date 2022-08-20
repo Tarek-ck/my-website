@@ -7,7 +7,25 @@
 </head>
 
 <!-- Simulate a smartphone / tablet look -->
-<img src="" class="image"> </img>
+<img src="" class="image">
+
+
+
+
+<div id="mySidenav" class="sidenav"">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="#">About</a>
+  <a href="#">Services</a>
+  <a href="#">Clients</a>
+  <a href="#">Contact</a>
+</div>
+
+<div id="main">
+  <span style="font-size:30px;cursor:pointer; float:right " onclick="openNav()">&#9776;</span>
+</div><br><br>
+
+
+
 <div class="mobile-container">
 
 <!-- Top Navigation Menu -->
@@ -25,16 +43,7 @@
 <!-- End smartphone / tablet look -->
 </div>
 
-<script>
-function myFunction() {
-  var x = document.getElementById("myLinks");
-  if (x.style.display === "block") {
-    x.style.display = " ";
-  } else {
-    x.style.display = "block";
-  }
-}
-</script>
+
 
 <body>
 
@@ -213,5 +222,31 @@ function myFunction() {
     <P style="text-align:right; font-size: 13px;"><i> Made by:Tarek El Cheikh KHALIL</i></P>
   </div>  
   </body>
+  
+  
+  
+  <script>
+function myFunction() {
+  var x = document.getElementById("myLinks");
+  if (x.style.display === "block") {
+    x.style.display = " ";
+  } else {
+    x.style.display = "block";
+  }
+}
+
+
+function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+  document.getElementById("main").style.marginLeft = "250px";
+  document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+  document.getElementById("main").style.marginLeft= "0";
+  document.body.style.backgroundColor = "white";
+}
+</script>
     </html>
     
